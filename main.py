@@ -97,7 +97,7 @@ def process_channel(row: pd.Series, api_key: str) -> dict:
 
 
 def _parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Chạy pipeline YouTube -> BigQuery (Level Khó)")
+    parser = argparse.ArgumentParser(description="=== CHẠY PIPELINE YOUTUBE ===")
     parser.add_argument(
         "--limit-channels", type=int, default=None,
         help="Chỉ xử lý N kênh đầu tiên trong artists.csv - dùng để test nhanh trước khi chạy full 10 kênh",
@@ -147,7 +147,7 @@ def main():
 
     load_raw_responses(client, raw_dataset, all_raw)
 
-    logger.info("=== Pipeline chạy xong ===")
+    logger.info("=== PIPELINE CHẠY XONG ===")
 
 
 if __name__ == "__main__":
